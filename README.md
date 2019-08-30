@@ -3,7 +3,7 @@ a light weight goroutine pool
 
 ## Example
 
- ```
+ ```go
 package main
 
 import (
