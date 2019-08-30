@@ -55,7 +55,7 @@ func (p *Pool) AddJob(job *JobParam) {
 	p.jobQueue <- job
 }
 
-//Stop stop all running goroutines Immediately, ignore jobs in jobQueue
+//Stop stop all running goroutines immediately, ignore jobs in jobQueue
 func (p *Pool) Stop() {
 	p.cancelFunc()
 	p.wg.Wait()
